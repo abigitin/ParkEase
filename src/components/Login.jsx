@@ -6,7 +6,7 @@ function Login() {
 				Welcome to ParkEase
 			</div>
 			<div>
-				<Link to="/Abc">
+				<Link to="/Home">
 					<button>Click Me</button>
 				</Link>
 			</div>
