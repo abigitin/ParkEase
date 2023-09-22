@@ -67,33 +67,38 @@ function Payment() {
               className="border-2 rounded-md py-2 px-3 bg-gray-200"
             />
           </div>
-          <div className="flex flex-col p-2">
-            <label htmlFor="expirationDate" className="text-lg font-semibold text-white">
-              Expiration Date:
-            </label>
-            <input
-              type="text"
-              id="expirationDate"
-              placeholder="MM/YY"
-              value={expirationDate}
-              onChange={(e) => setExpirationDate(e.target.value)}
-              required
-              className="border-2 rounded-md py-2 px-3 bg-gray-200"
-            />
-          </div>
-          <div className="flex flex-col p-2">
-            <label htmlFor="cvv" className="text-lg font-semibold text-white">
-              CVV:
-            </label>
-            <input
-              type="text"
-              id="cvv"
-              placeholder="123"
-              value={cvv}
-              onChange={(e) => setCvv(e.target.value)}
-              required
-              className="border-2 rounded-md py-2 px-3 bg-gray-200"
-            />
+          <div className="flex flex-row">
+            <div className="flex flex-col p-2">
+              <label htmlFor="expirationDate" className="text-lg font-semibold text-white">
+                Expiration Date:
+              </label>
+              <input
+                type="text"
+                id="expirationDate"
+                placeholder="MM/YY"
+                maxLength="4"
+                value={expirationDate}
+                onChange={(e) => setExpirationDate(e.target.value)}
+                required
+                className="border-2 rounded-md py-2 px-3 bg-gray-200"
+              />
+            </div>
+            <div className="flex flex-col p-2 mx-14">
+              <label htmlFor="cvv" className="text-lg font-semibold text-white">
+                CVV:
+              </label>
+              <input
+                type="text"
+                id="cvv"
+                placeholder="123"
+                value={cvv}
+                onChange={(e) => setCvv(e.target.value)}
+                required
+                maxLength="3"
+                style={{ width: "60px" }}
+                className="border-2 rounded-md py-2 px-3 bg-gray-200 flex items-end justify-end"
+              />
+            </div>
           </div>
           <div className='py-5 flex justify-center'>
             <button
@@ -102,6 +107,7 @@ function Payment() {
               Payment Now
             </button>
           </div>
+          
         </form>
 
         {/* Google pay button */}
