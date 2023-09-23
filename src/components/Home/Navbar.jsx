@@ -16,13 +16,13 @@ function Navbar() {
 	];
 	return (
 		<div>
-			<nav className="bg-blue-500 p-4">
+			<nav className="bg-yellow-500 p-4">
 				<div className="container mx-auto flex items-center justify-between">
 					{/* Hamburger Icon (Always Visible) */}
 					<div className="block sm:hidden">
 						<button
 							onClick={toggleMobileMenu}
-							className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
+							className="text-black hover:text-gray-300 focus:outline-none focus:text-gray-300"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ function Navbar() {
 
 					{/* Mobile Menu (Always Visible) */}
 					<div className={`sm:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}>
-						<ul className="text-white mt-2">
+						<ul className="text-black mt-2">
 							{mobileMenuItems.map((item, index) => (
 								<li key={index} className="mb-2">
 									<a href={item.link} className="hover:underline">
@@ -74,7 +74,7 @@ function Navbar() {
 
 					{/* Desktop Menu (Hidden on Small Screens) */}
 					<div className="hidden sm:block">
-						<ul className="text-white">
+						<ul className="text-black">
 							<li className="ml-4">
 								<a href="#" className="hover:underline">
 									Home
