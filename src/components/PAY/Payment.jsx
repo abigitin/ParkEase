@@ -99,7 +99,7 @@ function Payment() {
 	return (
 		<>
 			{paymentSuccess ? (
-				navigate("/scs")
+				navigate("/info")
 			) : (
 				<div className="bg-black h-screen">
 					<header className="text-yellow-300 font-bold text-3xl justify-center flex pt-6 py-8">
@@ -203,24 +203,16 @@ function Payment() {
 						{/* Total Payment */}
 						<div className="flex ">
 							<div className="flex flex-col p-2">
-								<label
-									className="text-lg font-semibold text-white"
-								>
+								<label className="text-lg font-semibold text-white">
 									Total payment
 								</label>
 							</div>
 							<div className="flex flex-row p-2 relative w-40 ">
-								<label
-									className="text-lg font-semibold text-yellow-300 absolute inset-x-40"
-								>
+								<label className="text-lg font-semibold text-yellow-300 absolute inset-x-40">
 									100 INR
 								</label>
-
 							</div>
 						</div>
-
-
-
 
 						<div className=" py-5 flex justify-center  ">
 							<button
@@ -262,7 +254,7 @@ function Payment() {
 								transactionInfo: {
 									totalPriceStatus: "FINAL",
 									totalPriceLabel: "Total",
-									totalPrice: "100",
+									totalPrice: "50",
 									currencyCode: "INR",
 									countryCode: "IN",
 								},
