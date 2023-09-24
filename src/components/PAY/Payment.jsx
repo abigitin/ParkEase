@@ -200,7 +200,29 @@ function Payment() {
 							</div>
 						</div>
 
-						<div className="py-5 flex justify-center">
+						{/* Total Payment */}
+						<div className="flex ">
+							<div className="flex flex-col p-2">
+								<label
+									className="text-lg font-semibold text-white"
+								>
+									Total payment
+								</label>
+							</div>
+							<div className="flex flex-row p-2 relative w-40 ">
+								<label
+									className="text-lg font-semibold text-yellow-300 absolute inset-x-40"
+								>
+									100 INR
+								</label>
+
+							</div>
+						</div>
+
+
+
+
+						<div className=" py-5 flex justify-center  ">
 							<button
 								className="bg-yellow-400 rounded-md p-3 text-black font-semibold "
 								type="submit"
@@ -211,7 +233,7 @@ function Payment() {
 					</form>
 
 					{/* Google pay button */}
-					<div className="Gpay flex justify-center">
+					<div className="Gpay flex justify-center  ">
 						<GooglePayButton
 							environment="TEST"
 							paymentRequest={{
