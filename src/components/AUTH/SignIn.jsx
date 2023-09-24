@@ -41,24 +41,22 @@ function Login() {
 			});
 	};
 	return (
-		<>
+		<div className=" bg-black h-screen ">
 			<form onSubmit={signIn}>
-				<div className="bg-black h-auto">
+				<div>
 					<header className="text-yellow-300 font-bold text-3xl justify-center flex pt-6 tracking-wide">
 						<p className="bg-yellow-400 font-sans text-black mx-2 rounded-sm text-2xl">
 							P
 						</p>
 						PARK <span className="text-white mx-2"> EASE</span>
 					</header>
-					<div className="flex items-center justify-center h-[30rem]">
-						<img
-							src={loginImg}
-							className="h-[30rem] w-full"
-							alt="Login image"
-						/>
+					<div className="flex items-center justify-center">
+						<img src={loginImg} className="h-72 w-full" alt="Login image" />
 					</div>
 
-					<p className="text-yellow-400 text-4xl text-left font-bold">Log In</p>
+					<p className="text-yellow-400 text-4xl text-left font-bold text-center pt-6	">
+						Log In
+					</p>
 					<div className="block items-center justify-center my-4">
 						<div className="flex justify-center items-center mb-3">
 							<input
@@ -107,7 +105,7 @@ function Login() {
 					</div>
 				</div>
 			</form>
-		</>
+		</div>
 	);
 }
 
