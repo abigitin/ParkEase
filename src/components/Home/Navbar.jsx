@@ -7,7 +7,6 @@ function Navbar() {
 		setMobileMenuOpen(!isMobileMenuOpen);
 	};
 
-	// Define the mobile menu items
 	const mobileMenuItems = [
 		{ text: "Home", link: "#" },
 		{ text: "About", link: "#" },
