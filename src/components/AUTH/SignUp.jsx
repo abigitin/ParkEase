@@ -59,7 +59,7 @@ function SignUp() {
 						<img src={loginImg} className="h-72 w-full" alt="Login image" />
 					</div>
 		
-					<p className="text-yellow-400 text-4xl text-left font-bold text-center pt-6	">
+					<p className="text-yellow-400 text-4xl text-left font-bold text-center pt-7	">
 						Sign Up
 					</p>
 					<div className="block justify-center items-center ">
