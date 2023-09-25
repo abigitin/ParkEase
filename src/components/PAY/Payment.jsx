@@ -209,7 +209,7 @@ function Payment() {
 							</div>
 							<div className="flex flex-row p-2 relative w-40 ">
 								<label className="text-lg font-semibold text-yellow-300 absolute inset-x-40">
-									100 INR
+									50 INR
 								</label>
 							</div>
 						</div>
