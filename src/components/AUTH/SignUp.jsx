@@ -91,7 +91,7 @@ function SignUp() {
 								Sign Up
 							</button>
 						</div>
-						<Link to="/">
+						<Link to="/signin">
 							<p className="text-white mt-2 text-center text-lg">
 								Already have an account?{" "}
 								<span className="text-yellow-400">Login</span>

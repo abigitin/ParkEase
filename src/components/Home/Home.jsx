@@ -39,7 +39,7 @@ function Home() {
 					<ReactMapGL
 						mapboxAccessToken="pk.eyJ1IjoiYWJpcmZyb21raXRjaGVuIiwiYSI6ImNsanF2OWtpbzAxdWwzZHZzanpkYTByaGoifQ.5h9oEcPU2VSNjvgQmjV-AA"
 						initialViewState={initialViewState}
-						style={{ width: 500, height: 600 }}
+						style={{ width: 500, height: 800 }}
 						mapStyle="mapbox://styles/mapbox/outdoors-v12"
 					>
 						{showPopup && (

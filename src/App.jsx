@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import Payment from "./components/PAY/Payment";
 import Paymentscs from "./components/PAY/PaymentSuccess";
 import Info from "./components/Info";
+import Front from "./components/Front";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 export default function App() {
@@ -11,11 +12,12 @@ export default function App() {
 		<>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<SignIn />} />
+					<Route path="/" element={<Front />} />
+					<Route path="/front" element={<Front />} />
+					<Route path="/signin" element={<SignIn />} />
 					<Route path="/signup" element={<SignUp />} />
 					<Route path="/home" element={<Home />} />
 					<Route path="/payment" element={<Payment />} />
-					<Route path="/payment/scs" element={<Paymentscs />} />
 					<Route path="/scs" element={<Paymentscs />} />
 					<Route path="/info" element={<Info />} />
 				</Routes>
