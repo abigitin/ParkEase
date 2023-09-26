@@ -9,7 +9,7 @@ function Home() {
 	const [showPopup, togglePopup] = React.useState(false);
 	const [Latitude, setLatitude] = useState(null);
 	const [Longitude, setLongitude] = useState(null);
-	const [showMap, setShowMap] = useState(false);
+	const [showMap, setShowMap] = useState(true);
 	useEffect(() => {
 		if ("geolocation" in navigator) {
 			navigator.geolocation.getCurrentPosition(function (position) {
