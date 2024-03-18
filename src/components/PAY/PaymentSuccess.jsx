@@ -44,13 +44,13 @@ function PaymentSuccessful() {
 				</p>
 			</motion.div>
 			<Link to="/">
-				<div className="flex justify-center items-center py-80">
+				<div className="flex justify-center items-center my-44 sm:my-28">
 					<button
 						type="submit"
 						id="home"
-						className="bg-yellow-400 rounded-md m-4 mb-0 w-4/5 py-2"
+						className="bg-yellow-400 rounded-md m-4 mb-0 w-4/5 py-2 sm:w-48"
 					>
-						Back
+						Done
 					</button>
 				</div>
 			</Link>

@@ -5,6 +5,7 @@ import Payment from "./components/PAY/Payment";
 import Paymentscs from "./components/PAY/PaymentSuccess";
 import Info from "./components/Info";
 import Front from "./components/Front";
+import DropdownMenu from "./components/Home/Dropdown";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
 					<Route path="/payment" element={<Payment />} />
 					<Route path="/scs" element={<Paymentscs />} />
 					<Route path="/info" element={<Info />} />
+					<Route path="/drop" element={<DropdownMenu />} />
 				</Routes>
 			</BrowserRouter>
 		</>
